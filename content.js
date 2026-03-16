@@ -8,7 +8,7 @@ async function getActivityData() {
     const activityId = window.location.pathname.split('/').pop();
 
     // 2. Construct the dynamic API URL
-    const apiUrl = `https://intervals.icu/api/activity/${activityId}`;
+    const apiUrl = `https://intervals.icu/api/activity/${activityId}?intervals=true`;
     console.log(`Fetching data from: ${apiUrl}`);
 
     // 3. Perform the API call
