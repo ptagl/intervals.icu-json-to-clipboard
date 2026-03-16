@@ -9,7 +9,7 @@ all: zip
 
 zip:
 	@echo "Building $(ZIP_NAME)..."
-	@zip -j $(ZIP_NAME) $(FILES)
+	@zip $(ZIP_NAME) $(FILES)
 	@echo "Done: $(ZIP_NAME)"
 
 clean:
