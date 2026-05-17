@@ -79,6 +79,11 @@ function addExportButton() {
 
 // Retrieve the div container where the button should be placed
 function getButtonContainer() {
+    // Check if we're on an activity page
+    if (!window.location.pathname.startsWith('/activities/')) {
+        return null;
+    }
+
     // Get the higher level container
     const header = document.querySelector('.gutter8');
 

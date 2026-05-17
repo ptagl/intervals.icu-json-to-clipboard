@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Intervals.icu - JSON to Clipboard",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add a 'JSON to Clipboard' button to Intervals.icu to easily export activities.",
   "content_scripts": [
     {
       "matches": [
-        "https://intervals.icu/activities/*"
+        "https://intervals.icu/*"
       ],
       "js": [
         "content.js"
